@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&display=swap');
+@import url("palette.css");
+@import url("components.css");
+@import url("header.css");
+@import url("product.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
