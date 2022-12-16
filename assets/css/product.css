@@ -113,3 +113,79 @@
 .product .pictures .small-pictures img:hover {
     transform: scale(1.05);
 }
+
+.dime img{
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .product {
+      display: flex;
+      flex-direction: column;
+    }
+    .product .card {
+        border-radius: 0rem 0rem 5rem 5rem;
+        padding: 0  rem;
+    } 
+    .dime img{
+        width: 50px;
+        display: flex;
+    }
+    .dime {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .product .card .name{
+        text-align: left;
+        padding: 1rem;
+    }
+    .product .card .description {
+        text-align: left;
+        padding: 1rem;
+    }
+    .product .card h3 {
+        padding: 20px;        
+    }
+    .product .card .price {
+        padding: 20px;
+   }
+
+
+}
+@media screen and (max-width: 383px) {
+    .product {
+        display: flex;
+        flex-direction: column;
+      }
+    .product .card {
+        border-radius: 0rem 0rem 5rem 5rem;
+        padding: 0rem;
+        width: 40rem;
+    } 
+    .buttons {
+        padding-bottom: 5rem;
+    }
+    .product .pictures .big-picture {
+        width: 39rem;
+    }
+    .text-links {
+        visibility: hidden;
+    }
+    .title {
+        visibility: hidden;
+    }
+    .sr-icon {
+        visibility: hidden;
+    }
+    .pr-icon {
+        visibility: hidden;
+    }
+    header .logo {
+        align-items: center;
+ }
+    .burger {
+        height: 5rem;
+    }
+}
