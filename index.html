@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link href="https://fonts.googleapis.com/css?family=Lexend&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lexend&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
     <title>Les Meubles Circulaires</title>
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
 
@@ -84,19 +84,35 @@
 </body>
         <section class="bandeau1">
             <div>
-                <img src="images/Frame_4.png" alt="icone de localisation">
+                <picture>
+                    <source media="(max-width: 383px)" srcset="images/Frame_4_1.png">
+                    <source media="(min-width: 383px)" srcset="images/Frame_4.png">
+                    <img src="images/Frame_4.png" alt="icone de localisation">
+                </picture>
                 <p class="p-spe">Livraison à vélo incluse 2e, 3e, 4e, 10e, 11e arrondissement (zones adjacentes : nous consulter).</p>
             </div>
             <div>
-                <img src="images/Frame_5.png" alt="icone de clé a molette">
+                <picture>
+                    <source media="(max-width: 383px)" srcset="images/Frame_5_1.png">
+                    <source media="(min-width: 383px)" srcset="images/Frame_5.png">
+                    <img src="images/Frame_5.png" alt="icone de Réparation">
+                </picture>
                 <p>Réparation de meubles d’occasion</p>
             </div>
             <div>
-                <img src="images/Frame_6.png" alt="icone de carte bleue">
+                <picture>
+                    <source media="(max-width: 383px)" srcset="images/Frame_8_1.png">
+                    <source media="(min-width: 383px)" srcset="images/Frame_8.png">
+                    <img src="images/Frame_8.png" alt="icone de moyen de payement">
+                </picture>
                 <p>Achetez et vendez vos meubles sans frais</p>
             </div>
             <div>
-                <img src="images/Frame_8.png" alt="icone de develloppement durable">
+                <picture>
+                    <source media="(max-width: 383px)" srcset="images/Frame_6_1.png">
+                    <source media="(min-width: 383px)" srcset="images/Frame_6.png">
+                    <img src="images/Frame_6.png" alt="icone de devellopement durable">
+                </picture>                
                 <p>#zerodechet #ecoresponsable</p>
             </div>
         </section>
@@ -128,12 +144,30 @@
         <div>
             <p class="footer-title">Nous contacter</p>
             <div class="footer-img-wrapper">
-                <img src="images/insta.png" alt="instagram link">
-                <img src="images/fb.png" alt="facebook link">
-                <img src="images/whatsapp.png" alt="whatsapp link">
+                <a href="https://www.instagram.com/lesmeublescirculaires.fr/">
+                    <picture>
+                        <source media="(max-width: 383px)" srcset="images/insta_2.png">
+                        <source media="(min-width: 383px)" srcset="images/insta.png">
+                        <img src="images/insta.png" alt="lien vers instagram">
+                    </picture>
+                </a>
+                <a href="https://www.facebook.com/LesMeublesCirculaires.fr">
+                    <picture>
+                        <source media="(max-width: 383px)" srcset="images/fb_2.png">
+                        <source media="(min-width: 383px)" srcset="images/fb.png">
+                        <img src="images/fb.png" alt="lien vers facebook">
+                    </picture>
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=33633861297&text=Bonjour+%21+J%27ai+une+question+%3A+...%0D%0A%5Baccueil+nouveau%5D&type=phone_number&app_absent=0">
+                    <picture>
+                        <source media="(max-width: 383px)" srcset="images/whatsapp_2.png">
+                        <source media="(min-width: 383px)" srcset="images/whatsapp.png">
+                        <img src="images/whatsapp.png" alt="lien vers whatsapp">
+                    </picture> 
+                </a>
             </div>
         </div>
-        <div>
+        <div class="footer-top-div2">
             <p class="footer-title">Notre zone de livraison</p>
             <p>3ème, 4ème, 10ème et 11ème arrondissement de Paris</p>
         </div>
