@@ -17,9 +17,29 @@
     <script defer src="assets/js/cart.js" type="text/javascript"></script>
 </head>
 <body>
+<div class="menuBurger">
+    <div class="cross">
+        <img src="assets/icons/cross.png" alt="close button menu burger">
+    </div>
+    <div class="burgerTop">
+        <a href="#"><img class="burger-icon" src="assets/icons/profile.svg" alt="Profile Icon">Mon compte</a>
+        <a href="#" class="burger-icon"><img src="assets/icons/cart.svg" alt="Cart Icon">Mon panier</a>
+        <a href="#"><img class="burger-icon" src="assets/icons/search.svg" alt="Search Icon">Recherche</a>
+    </div>
+    <hr>
+    <div class="burgerBottom">
+        <a href="#">Accueil</a>
+        <a href="#">Nos services</a>
+        <a href="#">Nos produits</a>
+        <a href="#">Contact</a>
+    </div>
 
+</div>
 
     <header>
+        <a href="#">
+            <img class="burgerIcon" src="assets/images/🦆 icon _menu_.png" alt="menu burger logo">
+        </a>
         <a class="left" href="#">
             <img src="assets/images/logo.png" alt="Les Meubles Circulaires" class="logo">
             <h1 class="title">Les Meubles Circulaires</h1>
@@ -39,51 +59,44 @@
         </div>
     </header>
 
-    <main>
-
-        <section class="product">
-            <div class="pictures">
-                <div style="background-image: url(assets/images/products/white-shelf/front.png)" class="big-picture"></div>
-                <div class="small-pictures">
-                    <img src="assets/images/products/white-shelf/left.png">
-                    <img src="assets/images/products/white-shelf/right.png">
-                    <img src="assets/images/products/white-shelf/zoom.png">
-                </div>
+<section class="product">
+    <div class="pictures">
+        <div style="background-image: url(assets/images/products/white-shelf/front.png)" class="big-picture"></div>
+        <div class="small-pictures">
+            <img src="assets/images/products/white-shelf/left.png">
+            <img src="assets/images/products/white-shelf/right.png">
+            <img src="assets/images/products/white-shelf/zoom.png">
+        </div>
+    </div>
+    <div class="card">
+        <h2 class="name">Étagère blanche</h2>
+        <p class="description">
+            Description du produit Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            
+        </p>
+        <div class="dime">
+            <h3>Dimensions</h3>
+        </div>
+        <div class="dimensions">
+            <div class="height">
+                <h4>Hauteur</h4>
             </div>
-            <div class="card">
-                <h2 class="name">Étagère blanche</h2>
-                <p class="description">
-                    Description du produit Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, 
-                    but also the leap into electronic typesetting, remaining essentially unchanged.
-                </p>
-                <div class="dime">
-                    <h3>Dimensions</h3>
-                </div>
-                <div class="dimensions">
-                    <div class="height">
-                        <h4>Hauteur</h4>
-                    </div>
-                    <div class="width">
-                        <h4>Largeur</h4>
-                    </div>
-                    <div class="weight">
-                        <h4>Poids</h4>
-                    </div>
-                </div>
-                <h2 class="price">329 €</h2>
-                <div class="buttons">
-                    <a class="button primary" href="#">Acheter maintenant</a>
-                    <a class="button add-to-cart" href="#">Ajouter au panier</a>
-                </div>
+            <div class="width">
+                <h4>Largeur</h4>
             </div>
-        </section>
-
-    </main>
-    
-</body>
+            <div class="weight">
+                <h4>Poids</h4>
+            </div>
+        </div>
+        <h2 class="price">329 €</h2>
+        <div class="buttons">
+            <a class="button primary" href="#">Acheter maintenant</a>
+            <a class="button add-to-cart" href="#">Ajouter au panier</a>
+        </div>
+    </div>
+</section>
         <section class="bandeau1">
             <div>
                 <picture>
@@ -187,6 +200,7 @@
         <p>Copyright 2022 Les Meubles Circulaires</p>
     </div>
     </footer>
+    <script src="assets/js/burger.js"></script>
 </body>
 
 

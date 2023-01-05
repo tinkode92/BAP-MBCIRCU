@@ -1,3 +1,6 @@
+body {
+    position: relative;
+}
 .product {
     height: 620px;
     display: grid;
@@ -117,6 +120,14 @@
 .dime img{
     display: none;
 }
+.burgerIcon {
+    display: none;
+}
+.menuBurger {
+    visibility: hidden;
+    pointer-events: none;
+}
+
 
 @media screen and (max-width: 1100px) {
     .product {
@@ -155,32 +166,142 @@
 
 }
 @media screen and (max-width: 383px) {
+    .cross {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+        margin-top: 15px;
+    }
+    .menuBurger {
+        position: absolute;
+        visibility: visible;
+        pointer-events: auto;
+        height: 100vh;
+        width: 100%;
+        background: #fff;
+        z-index: 100;
+        padding-left: 30px;
+        transform: translateX(-383px);
+        transition: all 0.5s ease-in-out;
+    }
+    .menuBurger.show {
+        transform: translateX(0);
+    }
+    .burgerTop {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 70px;
+    }
+    .burgerTop a {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 25px;
+        font-weight: 900;
+    }
+    .menuBurger hr {
+        margin-top: 50px;
+        margin-bottom: 40px;
+        margin-right:  70px;
+        color: rgba(27, 27, 27, 0.514);
+    }
+    .burgerBottom {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 70px;
+    }
+    .burgerBottom a {
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    header .left .logo {
+        width: 33px;
+        height: 33px;
+        margin-left: 88px;
+    }
+    .burgerIcon {
+        display: block;
+        margin-left: 20px;
+        width: 26px;
+    }
+    header .right {
+        margin-right: 0;
+    }
+    
     .product {
         display: flex;
         flex-direction: column;
-      }
+        height: auto;
+        margin: 20px 30px;
+
+    }
     .product .card {
         border-radius: 0rem 0rem 5rem 5rem;
         padding: 0rem;
-        width: 40rem;
+        width: 20rem;
+
     } 
     .buttons {
         padding-bottom: 5rem;
     }
-    .product .pictures .big-picture {
-        width: 39rem;
+    .product .pictures {
+        grid-template-rows: 246px 1fr;
     }
-    .text-links {
-        visibility: hidden;
+    .product .pictures .big-picture {
+        width: 290px;
+        height: 100%;
+        margin-left: 20px;
+    }
+    .product .pictures .small-pictures img {
+        width: 72px;
+        height: 72px;
+    }
+    .product .card .dimensions {
+        margin: 0 5px;
+    }
+    
+    .product .card .description {
+        font-size: 13px;
+        font-weight: 400 !important;
+        padding: 5px 1rem ;
+        margin-top: 0;
+    }
+    .product .card h3 {
+        margin-top: 0;
+        padding: 10px 20px;
+    }
+    .product .card .price {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 15px;
+        line-height: 0;
+    }
+    .product .card .buttons {
+        margin-top: 24px;
+        padding-bottom: 4rem;
+        gap: 10px;
+        margin: 0 5px;
+    }
+    .product .card .buttons a {
+        font-size: 16px;
+        text-align: center;
+    }
+    .text-links,
+    .text-links > a {
+        display: none;
     }
     .title {
-        visibility: hidden;
+        display: none;
     }
     .sr-icon {
-        visibility: hidden;
+        display: none;
     }
     .pr-icon {
-        visibility: hidden;
+        display: none;
     }
     header .logo {
         align-items: center;
